@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnalikBaxti - Homiladorlikdan Bola Parvarishiga Qadam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+        * { font-family: 'Poppins', sans-serif; }
+        .gradient-primary { background: linear-gradient(135deg, #FF6B9D 0%, #E74C3C 100%); }
+        .gradient-secondary { background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); }
+        .gradient-accent { background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%); }
+        .text-gradient { background: linear-gradient(135deg, #FF6B9D 0%, #E74C3C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hover-lift { transition: all 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .animate-bounce-slow { animation: bounce 3s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <span class="text-2xl font-bold text-gradient">OnalikBaxti</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#muommo" class="text-gray-600 hover:text-red-500 transition">Muommolar</a>
+                <a href="#yechim" class="text-gray-600 hover:text-red-500 transition">Yechimlar</a>
+                <a href="#xususiyatlar" class="text-gray-600 hover:text-red-500 transition">Xususiyatlar</a>
+                <a href="#jamoa" class="text-gray-600 hover:text-red-500 transition">Jamoa</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-primary text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Homiladorlikdan ilk qadamgacha</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-95">Sun'iy intellekt ko'magida mukammal onalik va xotirjam parvarish ekotizimi</p>
+            <button class="bg-white text-red-500 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition transform hover:scale-105">
+                Boshlanish <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Muommolar Section -->
+    <section id="muommo" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">
+                <i class="fas fa-exclamation-circle text-red-500 mr-3"></i>Muhim Muommolar
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="hover-lift bg-white rounded-xl shadow-lg p-8 border-l-4 border-red-500">
+                    <div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center text-white mb-6 text-2xl">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Farzand Istagi</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Farzand istagidagi oilalar ayollar homilasini to'g'ri harakat qilishida nimalarga e'tibor berish kerakligi haqida yetarli bilimga ega emasligi.
+                    </p>
+                </div>
+
+                <!-- Problem 2 -->
+                <div class="hover-lift bg-white rounded-xl shadow-lg p-8 border-l-4 border-purple-500">
+                    <div class="w-16 h-16 gradient-secondary rounded-full flex items-center justify-center text-white mb-6 text-2xl">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Sog'lom Rivojlanish</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Farzand tug'ulgandan so'ng sog'lom rivojlanishida nimalarga e'tibor berish kerakligi bilishmasligi.
+                    </p>
+                </div>
+
+                <!-- Problem 3 -->
+                <div class="hover-lift bg-white rounded-xl shadow-lg p-8 border-l-4 border-pink-500">
+                    <div class="w-16 h-16 gradient-accent rounded-full flex items-center justify-center text-white mb-6 text-2xl">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Bola Parvarishi</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Farzand tug'ulgandan 3 yoshgacha qanday parvarish qilish bilimlar yetishmasligi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="yechim" class="py-20 px-4 bg-gradient-to-r from-red-50 to-pink-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">
+                <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>Bizning Yechimlar
+            </h2>
+            
+            <div class="space-y-12">
+                <!-- Solution 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-xl shadow-lg">
+                    <div class="md:w-1/3">
+                        <div class="w-40 h-40 gradient-primary rounded-full flex items-center justify-center text-white text-6xl animate-bounce-slow">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Bilim va Ma'lumot
+                        </h3>
+                        <p class="text-gray-600 mb-3 text-lg">
+                            Homiladorlik va bola parvarishi haqida to'liq, shunga oid har bir bosqich uchun maxsus tuzilgan bilimlar. Sun'iy intellekt ko'magida shaxsiy maslahatlar va tavsiyalar.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Homiladorlik uchun to'liq qo'llanma</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Tug'ilish tayogarligini shakllantirish</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>3 yoshgacha bola parvarishi bo'yicha maslahatlar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-white p-8 rounded-xl shadow-lg">
+                    <div class="md:w-1/3">
+                        <div class="w-40 h-40 gradient-secondary rounded-full flex items-center justify-center text-white text-6xl animate-bounce-slow">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>AI Maslahatchi
+                        </h3>
+                        <p class="text-gray-600 mb-3 text-lg">
+                            Har doim foydalanuvchi bilan bo'lib, har qanday savollarga tez va to'g'ri javoblar beruvchi sun'iy intellekt maslahatchi. Mavjud bo'lgan bilim va tajribaga qarab individual tavsiyalar.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>24/7 AI maslahatchi xizmati</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Shaxsiy tavsiyalar va plandash</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Darhol javob olish imkonyati</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Solution 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-xl shadow-lg">
+                    <div class="md:w-1/3">
+                        <div class="w-40 h-40 gradient-accent rounded-full flex items-center justify-center text-white text-6xl animate-bounce-slow">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Video va Amaliy Darslar
+                        </h3>
+                        <p class="text-gray-600 mb-3 text-lg">
+                            Mutaxassislar tomonidan tuzilgan video darslar va amaliy ko'rsatmalar. Har qanday vaziyatga tayyor bo'lishning eng yaxshi usullari.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Ko'p sondagi video darslar va tutorials</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Amaliy ko'rsatmalar va ekspertlar maslahatları</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-2"></i>Qo'shimcha resurslar va kitoblar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="xususiyatlar" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">
+                <i class="fas fa-star text-yellow-500 mr-3"></i>Platformaning Xususiyatlari
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-lg border-2 border-red-200 hover-lift">
+                    <i class="fas fa-mobile-alt text-3xl text-red-500 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2 text-gray-800">Mobil Ilovar</h4>
+                    <p class="text-gray-600 text-sm">Istalgan vaqtda, istalgan joydan oson foydalanish</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-lg border-2 border-purple-200 hover-lift">
+                    <i class="fas fa-lock text-3xl text-purple-500 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2 text-gray-800">Xavfsizlik</h4>
+                    <p class="text-gray-600 text-sm">Foydalanuvchining shaxsiy ma'lumotlari to'liq himoyalangan</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-pink-50 to-red-50 p-6 rounded-lg border-2 border-pink-200 hover-lift">
+                    <i class="fas fa-users text-3xl text-pink-500 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2 text-gray-800">Jamoa</h4>
+                    <p class="text-gray-600 text-sm">Boshqa oilalar bilan tajribalar almashashuv</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-lg border-2 border-green-200 hover-lift">
+                    <i class="fas fa-chart-line text-3xl text-green-500 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2 text-gray-800">Kuzatish</h4>
+                    <p class="text-gray-600 text-sm">Bolaning o'sishi va rivojlanishini kuzatish</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border-2 border-blue-200 hover-lift">
+                    <i class="fas fa-calendar text-3xl text-blue-500 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2 text-gray-800">Jadval</h4>
+                    <p class="text-gray-600 text-sm">Bolaning rivojlanish bosqichlari bo'yicha jadval</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-lg border-2 border-yellow-200 hover-lift">
+                    <i class="fas fa-headset text-3xl text-yellow-600 mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2 text-gray-800">Qo'llab-quvvatlash</h4>
+                    <p class="text-gray-600 text-sm">Har doim sevimli maslahatchilardan yordam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="jamoa" class="py-20 px-4 bg-gradient-to-r from-purple-50 to-pink-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">
+                <i class="fas fa-handshake text-red-500 mr-3"></i>Bizning Jamoa
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
+                    <div class="h-32 gradient-primary"></div>
+                    <div class="p-6 text-center -mt-12">
+                        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
+                            <i class="fas fa-user-tie text-red-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Sardor Asliddin</h3>
+                        <p class="text-red-500 font-semibold mb-2">Korxona rahbari (CEO)</p>
+                        <p class="text-gray-600 text-sm">Loyihani boshqarish va rivojlantirishdan javobgar</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
+                    <div class="h-32 gradient-secondary"></div>
+                    <div class="p-6 text-center -mt-12">
+                        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
+                            <i class="fas fa-code text-purple-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Abduxalim Qobilov</h3>
+                        <p class="text-purple-500 font-semibold mb-2">Texnik rahbar (CTO)</p>
+                        <p class="text-gray-600 text-sm">Texnik imlementatsiya va tahlil ishlarini boshqaradi</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
+                    <div class="h-32 gradient-accent"></div>
+                    <div class="p-6 text-center -mt-12">
+                        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
+                            <i class="fas fa-chart-bar text-pink-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Xoliyorov To'xtayev</h3>
+                        <p class="text-pink-500 font-semibold mb-2">Marketolog (CMO)</p>
+                        <p class="text-gray-600 text-sm">Bazaar tahlili va marketing strategiyasi</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
+                    <div class="h-32 bg-gradient-to-r from-green-400 to-teal-400"></div>
+                    <div class="p-6 text-center -mt-12">
+                        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
+                            <i class="fas fa-share-alt text-green-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Nodira Eshqulova</h3>
+                        <p class="text-green-500 font-semibold mb-2">SMM Manager</p>
+                        <p class="text-gray-600 text-sm">Ijtimoiy tarmoqlar boshqaruvchisi</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
+                    <div class="h-32 bg-gradient-to-r from-blue-400 to-indigo-400"></div>
+                    <div class="p-6 text-center -mt-12">
+                        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
+                            <i class="fas fa-laptop-code text-blue-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Islom Karimov</h3>
+                        <p class="text-blue-500 font-semibold mb-2">Backend Dasturchi</p>
+                        <p class="text-gray-600 text-sm">Serverlar va bazalari boshqaruvchisi</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-lift">
+                    <div class="h-32 bg-gradient-to-r from-orange-400 to-red-400"></div>
+                    <div class="p-6 text-center -mt-12">
+                        <div class="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-4xl">
+                            <i class="fas fa-comment-dots text-orange-500"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">Bexruz Hamidov</h3>
+                        <p class="text-orange-500 font-semibold mb-2">Maslaxatchi</p>
+                        <p class="text-gray-600 text-sm">Foydalanuvchilar bilan aloqa va maslahatlash</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="gradient-primary text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Biz bilan bog'lanish</h2>
+            <p class="text-xl mb-8">OnalikBaxti - Har bir ona va oila uchun ishonch va bilim</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg">
+                    <i class="fas fa-phone text-3xl mb-3"></i>
+                    <p class="text-lg font-semibold">+998 (99) 887-77-55</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg">
+                    <i class="fas fa-envelope text-3xl mb-3"></i>
+                    <p class="text-lg font-semibold">support@tim.uz</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg">
+                    <i class="fas fa-globe text-3xl mb-3"></i>
+                    <p class="text-lg font-semibold">www.tim.uz</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-red-500 hover:scale-110 transition transform">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-red-500 hover:scale-110 transition transform">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-red-500 hover:scale-110 transition transform">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-red-500 hover:scale-110 transition transform">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-sm">
+                <span class="text-white font-bold">&copy; 2024 TIM GROUP MChJ</span> - OnalikBaxti Platformasi. Barcha huquqlar himoyalangan.
+            </p>
+            <p class="text-xs mt-4 text-gray-500">
+                Homiladorlikdan ilk qadamgacha: Sun'iy intellekt ko'magida mukammal onalik va xotirjam parvarish ekotizimi.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
